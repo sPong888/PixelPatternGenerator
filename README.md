@@ -1,2 +1,2 @@
-# PixelPatternGenerator
+# PixelPattern Generator
 Research-creation output
