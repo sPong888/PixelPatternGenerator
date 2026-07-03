@@ -5,17 +5,16 @@
 Developed by **Steven Pong**  
 School of Industrial Design  
 Carleton University
-<br>
-<br>
+<br><br>
 
 
 ## Overview
 
 Pixel Pattern Generator is a Python application that converts digital raster images into printable patterns for physical fabrication using colour-limited materials.
 
-The software was developed to address a common challenge in research-creation and digital craft: translating continuous digital imagery into discrete physical materials while preserving the visual character of the original image.
+The software was developed to address a common challenge in research-creation and digital craft: translating continuous digital imagery into discrete physical materials while preserving the visual character of the original image. Existing pattern-generation software is often tied to a single manufacturer or craft medium, limiting its flexibility for research and experimentation.
 
-instead of being limited to a specific manufacturer or craft medium, Pixel Pattern Generator uses a user-defined colour palette supplied as a CSV file. This allows the same computational workflow to be applied to a wide range of materials, including glass seed beads, embroidery floss, mosaic tiles, LEGO, and other pixel-based fabrication systems.
+Instead of being limited to a specific manufacturer or craft medium, Pixel Pattern Generator uses a user-defined colour palette supplied as a CSV file. This allows the same computational workflow to be applied to a wide range of materials, including glass seed beads, embroidery floss, mosaic tiles, LEGO, and other pixel-based fabrication systems.
 
 The project originated during the development of *Punked Ape Craft Club*, a research-creation project investigating the translation of digital imagery into handcrafted objects, but is evolving into a generalized computational tool for artists, designers, educators, and researchers.
 <br>
@@ -34,11 +33,17 @@ The result is a fabrication-ready pattern that preserves the overall appearance 
 
 ## Workflow
 
-1. Place source images in input_images direcotory
-2. Run application
-3. In serial, select options
-4. Retrieve patterns from output_patterns directory
-<br>
+1. Import source image(s).
+
+2. Import a user-defined material palette (.csv).
+
+3. Resize the image to the desired output dimensions.
+
+4. Match each pixel to the closest available material colour.
+
+5. Generate fabrication-ready documentation, including patterns, bills of materials, and production estimates.
+
+
 <br>
 
 
@@ -46,34 +51,43 @@ The result is a fabrication-ready pattern that preserves the overall appearance 
 
 ### Digital-to-Physical Translation
 
-| Original Image | Resolution/Colour Preview | Pattern Preview | Finished Artifact |
+| Original Image | Colour & Resolution Preview | Pattern Output | Finished Artifact |
 |:--------------:|:---------------:|:-----------------:|:-----------------:|
 | <img src="examples/Source_EG_01.png" width="220"> | <img src="examples/Preview_EG_02.png" width="220"> | <img src="examples/Pattern_EG_03.png" width="220"> | <img src="examples/Physical_EG_04.png" width="220"> |
-<br>
-<br>
+
+
 
 
 
 ## Features
 
 - User-defined material palettes
-- Adjustable output resolution
-- Aspect-ratio correction
-- Perceptual colour matching using CIE L\*a\*b\* colour space
-- Printable pattern generation
-- Bills of materials
-- Pattern legends
-- Production estimates
+
 - Batch processing of image collections
+
+- Adjustable output resolution
+
+- Perceptual colour matching using CIE L*a*b* colour space
+
+- Aspect-ratio correction
+
+- Printable pattern generation
+
+- Bills of materials
+
+- Pattern legends
+
+- Production estimates
+
 - Collection-wide material summaries
 <br>
 <br>
-<br>
+
 
 
 ## Example Material Palette
 
-Material colours are supplied through a simple, user-defined, CSV file.
+Material colours are supplied through a simple user-defined CSV file. This allows the software to work with virtually any colour-limited fabrication medium without modification to the source code.
 
 | Name | R | G | B |
 |------|--:|--:|--:|
@@ -83,16 +97,17 @@ Material colours are supplied through a simple, user-defined, CSV file.
 | Blue | 41 | 128 | 185 |
 
 <br>
-<br>
 
-## Technical Highlights
 
-- Python implementation
-- Modular processing pipeline
-- User-defined material inventories
-- CIE L\*a\*b\* perceptual colour matching
-- Batch processing of image collections
-- Automatic PDF and CSV generation
+## Highlights
+
+* Implemented in Python
+* Modular image-processing pipeline
+* User-defined material inventories (CSV)
+* CIE Lab* perceptual colour matching
+* Automated batch processing of image collections
+* Automatic PDF and CSV generation
+* Collection-level bill of materials aggregation
 
 <br>
 
@@ -108,7 +123,11 @@ Although originally developed to support beadwork, the underlying computational 
 
 ## Documentation
 
-Installation and usage instructions are available in install.md
+Installation and usage instructions are available in [INSTALL.md](INSTALL.md).
 
----
+<br>
+
+## Feedback
+
+Suggestions, bug reports, and feature requests are welcome. If you use Pixel Pattern Generator in your own research, teaching, or creative practice, I'd be interested to hear about your experience.
 
