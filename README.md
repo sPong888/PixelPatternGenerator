@@ -96,6 +96,8 @@ Material colours are supplied through a simple user-defined CSV file. This allow
 | Red | 212 | 45 | 63 |
 | Blue | 41 | 128 | 185 |
 
+The repository includes a deliberately limited six-colour example palette. Replace palette.csv with your own material inventory to generate fabrication patterns for any colour-limited medium.
+
 <br>
 
 
