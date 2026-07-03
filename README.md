@@ -68,6 +68,7 @@ The result is a fabrication-ready pattern that preserves the overall appearance 
 - Collection-wide material summaries
 <br>
 <br>
+<br>
 
 
 ## Example Material Palette
@@ -93,7 +94,7 @@ Material colours are supplied through a simple, user-defined, CSV file.
 - Batch processing of image collections
 - Automatic PDF and CSV generation
 
-
+<br>
 
 
 ## Research Context
