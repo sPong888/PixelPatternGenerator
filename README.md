@@ -48,7 +48,7 @@ The result is a fabrication-ready pattern that preserves the overall appearance 
 
 | Original Image | Resolution/Colour Preview | Pattern Preview | Finished Artifact |
 |:--------------:|:---------------:|:-----------------:|:-----------------:|
-| <img src="examples/EG_01.png" width="220"> | <img src="examples/EG_02.png" width="220"> | <img src="examples/EG_03.png" width="220"> | <img src="examples/EG_04.png>" width="220"> |
+| <img src="examples/Source_EG_01.png" width="220"> | <img src="examples/Preview_EG_02.png" width="220"> | <img src="examples/Pattern_EG_03.png" width="220"> | <img src="examples/Physical_EG_04.png>" width="220"> |
 <br>
 <br>
 
