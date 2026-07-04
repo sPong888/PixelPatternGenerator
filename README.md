@@ -133,3 +133,7 @@ Installation and usage instructions are available in [INSTALL.md](INSTALL.md).
 
 Suggestions, bug reports, and feature requests are welcome. If you use Pixel Pattern Generator in your own research, teaching, or creative practice, I'd be interested to hear about your experience.
 
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
