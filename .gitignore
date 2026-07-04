@@ -9,7 +9,8 @@ __pycache__/
 .vscode/
 
 # Working directories  
-
 input_images/
-
 output_patterns/
+
+# Local palette experiments
+palette_*.csv
