@@ -1,3 +1,30 @@
+"""
+Pixel Pattern Generator
+Version 1.0
+
+Description:
+    Pixel Pattern Generator converts digital raster images into
+    fabrication-ready patterns for colour-limited materials.
+
+    The software reduces an input image to a user-defined grid,
+    maps each pixel to the closest available colour contained in a
+    user-supplied material palette (CSV), and generates printable
+    pattern documentation together with material counts.
+
+Applications:
+    • Glass seed beads
+    • Quilt blocks
+    • Mosaic tiles
+    • LEGO
+    • Pixel art
+    • Other colour-limited fabrication media
+
+Repository:
+    https://github.com/sPong888/PixelPatternGenerator
+
+
+"""
+
 import os
 import csv
 import math
@@ -44,6 +71,7 @@ def get_pattern_size():
         print(f"\nWarning: The requested pattern contains {total_units:,} units.")
         print("Large patterns may require considerable processing time")
         print("and may produce very large PDF files (or might fail completely!).")
+        print("Consider starting small (e.g. 10x10 units) and scaling up gradually.")
 
         response = input(
             "\nContinue with these dimensions? (y to continue / n to enter new dimensions): "
@@ -161,6 +189,23 @@ def build_palette_index(palette):
 
 
 # === COLOUR MATCHING ===
+# Colour matching is performed in CIE L*a*b* colour space
+# using squared Euclidean distance, which more closely
+# approximates human colour perception than direct RGB
+# distance calculations.
+"""
+
+    Load a user-defined material palette from a CSV file.
+
+    Required columns:
+
+        Name, R, G, B
+
+    Returns:
+
+        dict mapping material names to RGB tuples.
+
+    """
 def closest_color(rgb, palette_index):
     pix_lab = rgb_to_lab(rgb)
 
